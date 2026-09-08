@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var currentFetch = originalFetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(fn) {
+              currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var proto = Object.getPrototypeOf(window) || (typeof Window !== 'undefined' && Window.prototype);
+            if (proto) {
+              var origFetch = proto.fetch || window.fetch;
+              var curFetch = origFetch;
+              Object.defineProperty(proto, 'fetch', {
+                get: function() {
+                  return curFetch;
+                },
+                set: function(fn) {
+                  curFetch = fn;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (err) {}
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="IvFOKYmrfdg6a8N2Ke4gZGWWOzYd1w0i3G55eem5BMo" />
+    <!-- Performance Optimization: Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    
+    <!-- Preload Hero Image -->
+    <link rel="preload" as="image" href="/images/khaled-400.webp" imagesrcset="/images/khaled-400.webp 400w, /images/khaled-800.webp 800w, /images/khaled.webp 1023w" imagesizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1023px" fetchpriority="high" />
+
+    <title>القائد | الإدارة المالية المتكاملة عن بعد للمنشآت</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="القائد | الإدارة المالية المتكاملة عن بعد للمنشآت" />
+    <meta name="description" content="القائد - الإدارة المالية المتكاملة عن بعد للمنشآت. أقدم حلولاً مالية متكاملة لدعم اتخاذ القرار وتحسين الأداء المالي، من خلال مسك الدفاتر، التحليل المالي، التخطيط المالي، وإعداد الميزانيات للمنشآت في المملكة العربية السعودية." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="language" content="Arabic" />
+
+    <!-- Multilingual SEO / hreflang -->
+    <link rel="alternate" hreflang="ar" href="https://alqaeed-sa.pages.dev/" />
+    <link rel="alternate" hreflang="x-default" href="https://alqaeed-sa.pages.dev/" />
+    <!-- English future support preparation -->
+    <!-- <link rel="alternate" hreflang="en" href="https://alqaeed-sa.pages.dev/en" /> -->
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alqaeed-sa.pages.dev/" />
+    <meta property="og:title" content="القائد | الإدارة المالية المتكاملة عن بعد للمنشآت" />
+    <meta property="og:description" content="القائد - الإدارة المالية المتكاملة عن بعد للمنشآت. حلول مالية متكاملة لدعم اتخاذ القرار وتحسين الأداء المالي للمنشآت في السعودية." />
+    <meta property="og:image" content="https://alqaeed-sa.pages.dev/images/khaled.webp" />
+    <meta property="og:image:alt" content="القائد - الإدارة المالية المتكاملة عن بعد للمنشآت" />
+    <meta property="og:image:width" content="1023" />
+    <meta property="og:image:height" content="1537" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:site_name" content="القائد" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://alqaeed-sa.pages.dev/" />
+    <meta name="twitter:title" content="القائد | الإدارة المالية المتكاملة عن بعد للمنشآت" />
+    <meta name="twitter:description" content="القائد - الإدارة المالية المتكاملة عن بعد للمنشآت. حلول مالية متكاملة لدعم اتخاذ القرار وتحسين الأداء المالي للمنشآت في السعودية." />
+    <meta name="twitter:image" content="https://alqaeed-sa.pages.dev/images/khaled.webp" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alqaeed-sa.pages.dev/" />
+
+    <!-- Favicons & Devices Theme Configuration -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png?v=4" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512x512.png?v=4" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png?v=4" />
+    <link rel="manifest" href="/manifest.webmanifest?v=4" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="القائد" />
+
+    <!-- Structured Data Schema (JSON-LD) -->
+    <script type="application/ld+json" id="schema-jsonld">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://alqaeed-sa.pages.dev/#person",
+      "name": "خالد القائد",
+      "jobTitle": "مؤسس القائد ومتخصص في الإدارة المالية المتكاملة عن بعد للمنشآت",
+      "url": "https://alqaeed-sa.pages.dev/",
+      "image": {
+        "@id": "https://alqaeed-sa.pages.dev/#logo"
+      },
+      "description": "خالد القائد، مؤسس القائد. متخصص في الإدارة المالية المتكاملة، التقارير المالية، التحليل المالي، والزكاة والضرائب لتقديم رؤى دقيقة تدعم اتخاذ القرار وتحسن الأداء المالي للمنشآت.",
+      "email": "alqaeed.sa@gmail.com",
+      "telephone": "+966511294383",
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "ماجستير إدارة الأعمال MBA"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "بكالوريوس التجارة شعبة المحاسبة"
+        }
+      ],
+      "knowsAbout": [
+        "الإدارة المالية",
+        "الإدارة المالية عن بعد",
+        "التخطيط المالي",
+        "التحليل المالي",
+        "إعداد القوائم المالية",
+        "مسك الدفاتر",
+        "المؤشرات المالية",
+        "إعداد الميزانيات",
+        "التقارير المالية",
+        "تحليل الربحية",
+        "تحليل التدفقات النقدية",
+        "الزكاة",
+        "ضريبة القيمة المضافة",
+        "الفاتورة الإلكترونية",
+        "الاستشارات المالية",
+        "Financial Management",
+        "Remote Financial Management",
+        "Financial Analysis",
+        "Financial Planning",
+        "Budgeting",
+        "Financial Statements",
+        "VAT",
+        "IFRS",
+        "ERP",
+        "Virtual CFO",
+        "KPIs",
+        "Cash Flow",
+        "Internal Control",
+        "Financial Reporting"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SA",
+        "addressRegion": "المملكة العربية السعودية"
+      },
+      "worksFor": {
+        "@id": "https://alqaeed-sa.pages.dev/#organization"
+      },
+      "sameAs": [
+        "https://www.tiktok.com/@alqaeed.sa1",
+        "https://www.instagram.com/alqaeed.sa",
+        "https://x.com/alqaeed_sa",
+        "https://www.youtube.com/@alqaeed-fin-Acc-tax-sa",
+        "https://www.facebook.com/share/1E5ttqMGB8/",
+        "https://www.linkedin.com/in/alqaeed-fin-acc-tax/"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://alqaeed-sa.pages.dev/#service",
+      "name": "القائد",
+      "url": "https://alqaeed-sa.pages.dev/",
+      "logo": {
+        "@id": "https://alqaeed-sa.pages.dev/#logo"
+      },
+      "image": {
+        "@id": "https://alqaeed-sa.pages.dev/#logo"
+      },
+      "description": "القائد - الإدارة المالية المتكاملة عن بعد للمنشآت. أقدم حلولاً مالية شاملة للمنشآت الصغيرة والمتوسطة لضمان الامتثال المالي وتحسين الأداء.",
+      "telephone": "+966511294383",
+      "priceRange": "$",
+      "provider": {
+        "@id": "https://alqaeed-sa.pages.dev/#person"
+      },
+      "areaServed": "Saudi Arabia",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "خدمات الإدارة المالية",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "تنظيم الحسابات ومسك الدفاتر"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "الزكاة والضريبة"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "إعداد القوائم المالية"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "التحليل المالي"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "التقارير الإدارية"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "إعداد الموازنات"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "إدارة التدفقات النقدية"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "المدير المالي عن بعد Virtual CFO"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://alqaeed-sa.pages.dev/#organization",
+      "name": "القائد",
+      "url": "https://alqaeed-sa.pages.dev/",
+      "logo": {
+        "@id": "https://alqaeed-sa.pages.dev/#logo"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+966511294383",
+        "contactType": "customer service",
+        "email": "alqaeed.sa@gmail.com",
+        "availableLanguage": [
+          "Arabic",
+          "English"
+        ],
+        "areaServed": "SA"
+      },
+      "legalName": "مؤسسة خالد القائد للخدمات التجارية",
+      "image": {
+        "@id": "https://alqaeed-sa.pages.dev/#logo"
+      },
+      "email": "alqaeed.sa@gmail.com",
+      "telephone": "+966511294383",
+      "addressCountry": "SA",
+      "areaServed": "Saudi Arabia",
+      "sameAs": [
+        "https://www.tiktok.com/@alqaeed.sa1",
+        "https://www.instagram.com/alqaeed.sa",
+        "https://x.com/alqaeed_sa",
+        "https://www.youtube.com/@alqaeed-fin-Acc-tax-sa",
+        "https://www.facebook.com/share/1E5ttqMGB8/",
+        "https://www.linkedin.com/in/alqaeed-fin-acc-tax/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://alqaeed-sa.pages.dev/#website",
+      "url": "https://alqaeed-sa.pages.dev/",
+      "name": "القائد | الإدارة المالية المتكاملة عن بعد للمنشآت",
+      "description": "القائد - الإدارة المالية المتكاملة عن بعد للمنشآت. حلول مالية متكاملة لدعم اتخاذ القرار وتحسين الأداء المالي للمنشآت في السعودية.",
+      "publisher": {
+        "@id": "https://alqaeed-sa.pages.dev/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://alqaeed-sa.pages.dev/#webpage",
+      "url": "https://alqaeed-sa.pages.dev/",
+      "name": "القائد | الإدارة المالية المتكاملة عن بعد للمنشآت",
+      "description": "القائد - الإدارة المالية المتكاملة عن بعد للمنشآت. حلول مالية متكاملة لدعم اتخاذ القرار وتحسين الأداء المالي للمنشآت في السعودية.",
+      "isPartOf": {
+        "@id": "https://alqaeed-sa.pages.dev/#website"
+      },
+      "about": {
+        "@id": "https://alqaeed-sa.pages.dev/#organization"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://alqaeed-sa.pages.dev/#logo"
+      },
+      "inLanguage": "ar-SA"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://alqaeed-sa.pages.dev/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alqaeed-sa.pages.dev/"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://alqaeed-sa.pages.dev/#logo",
+      "url": "https://alqaeed-sa.pages.dev/images/khaled.webp",
+      "contentUrl": "https://alqaeed-sa.pages.dev/images/khaled.webp",
+      "caption": "القائد - الإدارة المالية المتكاملة عن بعد للمنشآت",
+      "width": "1023",
+      "height": "1537",
+      "inLanguage": "ar-SA"
+    }
+  ]
+}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
